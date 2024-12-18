@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.JanelaController">
+    <HBox spacing="10" alignment="CENTER">
+        <!-- Tabela de Origem -->
+        <TableView fx:id="tabelaOrigem" prefHeight="200" prefWidth="150">
+            <columns>
+                <TableColumn text="Origem" fx:id="colunaOrigem" />
+            </columns>
+        </TableView>
+
+        <!-- Botões -->
+        <VBox spacing="10" alignment="CENTER">
+            <Button text="&gt;&gt;" onAction="#moverParaDestino" />
+            <Button text="&lt;&lt;" onAction="#moverParaOrigem" />
+        </VBox>
+
+        <!-- Tabela de Destino -->
+        <TableView fx:id="tabelaDestino" prefHeight="200" prefWidth="150">
+            <columns>
+                <TableColumn text="Destino" fx:id="colunaDestino" />
+            </columns>
+        </TableView>
+    </HBox>
+</VBox>
